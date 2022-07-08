@@ -1,0 +1,316 @@
+<html>
+
+<head>
+
+    <!-- BASIC PAGE NEEDS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Sobremesa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=EB+Garamond:wght@500&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+-->
+
+    <!--
+    <link rel="stylesheet" href="specimen_files/specimen_stylesheet.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="s tylesheet.css" type="text/css" charset="utf-8" />
+-->
+
+    <!-- FAVICON
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/svg" href="images/Favicon.svg">
+
+    <!-- CSS
+     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <!-- JS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <!--
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+-->
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+
+</head>
+
+<body onload="loadbody();">
+
+    <!-- NAV-BAR ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/Logo.svg" height="50" width="150"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cone">futures</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#speculations">(plate)culations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#predict">predict</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+
+    <section class="container-fluid d-flex hero">
+        <div class="row align-self-center justify-content-end">
+            <div class="col-lg-7 col-12 align-items-center">
+                <div class="row" style="margin-bottom: 50px ">
+                    <h1> are you worried about the next thing you'll eat?
+                    </h1>
+                </div>
+                <div class="row">
+                    <h4> So are we. Join the project by submitting your predictions for the future of food.
+                    </h4>
+                </div>
+                <div class="row align-self-center ctabtn">
+                    <a href="#cone" class="cta"> LEARN MORE </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- PLATE FUTURES ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+
+    <section class="container-fluid cone " id="cone">
+        <div class="row justify-content-center" style="padding:25px">
+            <div class="col-12">
+                <h2> what type of futures can we expect?</h2>
+            </div>
+        </div>
+        <div class="row align-items-evenly justify-content-center platescone content fade-in">
+            <div class="col-12">
+                <div class="row descright">
+                    <div class="col-lg-3 col-10">
+                        <div class="row align-items-center justify-content-center">
+                            <h3 style="text-align: left">possible</h3>
+                        </div>
+                        <div class="row align-items-center justify-content-center">
+                            <p style="text-align: left">it <b>MIGHT</b> happen, but it’s still up in the air, unclear.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row descleft">
+                    <div class="col-lg-3 col-10">
+                        <div class="row align-items-center justify-content-center">
+                            <h3 style="text-align: left">plausible</h3>
+                        </div>
+                        <div class="row align-items-center justify-content-center">
+                            <p style="text-align: left">it <b>COULD</b> happen, based on what is currently technologically feasable, it can fall into place. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row descright">
+                    <div class="col-lg-3 col-10">
+                        <div class="row align-items-center justify-content-center">
+                            <h3 style="text-align: left">preferable</h3>
+                        </div>
+                        <div class="row align-items-center justify-content-center">
+                            <p style="text-align: left">it <b>SHOULD</b> happen, but requires a critical change of direction towards what’s desired.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row descleft">
+                    <div class="col-lg-3 col-10">
+                        <div class="row align-items-center justify-content-center">
+                            <h3 style="text-align: left">probable</h3>
+                        </div>
+                        <div class="row align-items-center justify-content-center">
+                            <p style="text-align: left">will <b>LIKELY</b> happen, based on current trends and behaviors, being almost set to be fixed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- (PLATE)DICTIONS ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+
+
+    <section class="container-fluid predictions" id="speculations">
+        <div class="row justify-content-center" style="margin:20px">
+            <div class="col-12">
+                <h2> (plate)dictions </h2>
+            </div>
+            <div class="col-12">
+                <h3 style="text-align: center"> scroll to see the future </h3>
+            </div>
+        </div>
+        <div id="prediction-container" class="row align-self-center justify-content-center content fade-in">
+        </div>
+    </section>
+
+
+    <!-- SPECULATE ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+
+    <section class="container-fluid fields" id="predict">
+        <div class="row justify-content-center" style="margin:20px">
+            <div class="col-12">
+                <h2> speculate! </h2>
+            </div>
+            <div class="col-12">
+                <h3 style="text-align: center"> type your own version of the future </h3>
+            </div>
+        </div>
+        <div class="row align-self-center justify-content-end">
+            <div class="col-12">
+                <div class="form">
+                    <form method="post" id="fs-form">
+                        In the year <input id="year" name="year">
+                        it is <input list="futures" id="dropdown" name="future">
+                        <datalist id="futures">
+                            <option value="probable">
+                            <option value="plausible">
+                            <option value="possible">
+                            <option value="preferable">
+                        </datalist>
+                        we will <input id="effect" name="effect">
+                        because <input id="cause" name="cause">
+                        <div class="row align-self-center ctabtn">
+                            <button type="submit" class="cta" text="submit">Submit your prediction</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+
+    <section class="container-fluid content d-flex about" id="project">
+        <div class="row justify-content-evenly">
+            <div class="col-md-4 col-10 align-self-center content fade-in" style="margin: 2rem">
+                <div class="row">
+                    <h2 style="text-align:center">
+                        what is sobremesa?
+                    </h2>
+                </div>
+                <div class="row" style="margin-top: 2rem">
+                    <p>
+                        Sobremesa is an exploratory and speculative design project that aims to create reflection on the way we connect to food in our past, present, and future. In Spanish, sobremesa translates to “upon the table” and it is the Hispanic tradition of relaxing at the table after a heavy meal. The table represents a centerpiece for connections and reflections through conversations. I want to create an experience that allows us to digest not only food but our thoughts.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-7 align-self-center justify-content-center d-flex" style="margin: 2rem;">
+                <img class="overflow-hidden img-fluid content fade-in" src="images/fadeplate.png" style="mix-blend-mode:luminosity">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT––––––––––––––––––––––––––––––––––––––––––––––––––-->
+
+    <section class="container-fluid d-flex contact" id="contact">
+        <div class="row align-items-center justify-content-centerr">
+            <div class="col-12 align-items-evenly justify-content-center">
+                <div class="row">
+                    <h2 style="color: #CDFF5C">contact</h2>
+                </div>
+                <div class="row" style="margin-top: 2rem">
+                    <h3 style="color:#CDFF5C">Guillermo Mondelli</h3>
+                </div>
+                <div class="row justify-content-evenly" style="margin-top: 2rem">
+                    <div class="col-12">
+                        <a href="https://www.instagram.com/the_food_ture/" class="social">
+                            <img src="images/insta.svg">
+                        </a>
+                        <a href="https://www.linkedin.com/in/memondelli/"class="social">
+                            <img src="images/linkedin.svg">
+
+                        </a>
+                        <a href="https://wa.me/393756703800/"class="social">
+                            <img src="images/whatsapp.svg">
+                        </a>
+                        <a href="mailto:guillermondelli@gmail.com"class="social">
+                            <img src="images/mail.svg">
+                        </a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FIREBASE––––––––––––––––––––––––––––––––––––––––––––––––––-->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyC60VjFHP1NT1Qu_eauOeQl5QjcrgpUhAM",
+            authDomain: "foodture-a75c5.firebaseapp.com",
+            databaseURL: "https://foodture-a75c5.firebaseio.com",
+            projectId: "foodture-a75c5",
+            storageBucket: "foodture-a75c5.appspot.com",
+            messagingSenderId: "616742618768",
+            appId: "1:616742618768:web:1f61c21c1d9d95853c7a15",
+            measurementId: "G-KR0V98Q25Z"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+
+        const fs = firebase.firestore();
+        const db = firebase.database();
+
+    </script>
+
+    <script src="js/db.js"></script>
+
+</body>
+
+</html>

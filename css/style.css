@@ -1,0 +1,478 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F8FFEA;
+    margin: 0px;
+    display: block;
+    padding: 0;
+    background-image: url("../images/texture.png");
+}
+
+
+/*-- NAV-BAR ––––––––––––––––––––––––––––––––––––––––––––––––––--*/
+
+.pointer {
+    cursor: pointer;
+}
+
+.nav-item {
+    margin-left: 30px;
+    margin-right: 30px;
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'cascadia_monolight', monospace;
+    font-weight: 300;
+    color: #14001e;
+    font-size: 10pt;
+    letter-spacing: 5%
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #14001e;
+}
+
+.nav-item a:hover {
+    color: #F8FFEA;
+}
+
+.nav-link {
+    font-family: 'cascadia_monolight', monospace;
+    font-weight: 300;
+    color: #14001e;
+    font-size: 10pt;
+    letter-spacing: 5%
+}
+
+/*-- FONT STYLES ––––––––––––––––––––––––––––––––––––––––––––––––––--*/
+
+@font-face {
+    font-family: 'grandcru-boldmregular';
+    src: url('../fonts/grandcru-boldm-webfont.woff2') format('woff2'),
+        url('../fonts/grandcru-boldm-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'grandcru-extralightmregular';
+    src: url('../fonts/grandcru-extralightm-webfont.woff2') format('woff2'),
+        url('../fonts/grandcru-extralightm-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cascadia_monosemibold';
+    src: url('../fonts/cascadiamono-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/cascadiamono-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cascadia_monolight';
+    src: url('../fonts/cascadiamono-light-webfont.woff2') format('woff2'),
+         url('../fonts/cascadiamono-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1 {
+
+    font-family: 'grandcru-boldmregular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    color: #14001e;
+    text-align: left;
+    /*    font-variant-caps: petite-caps;*/
+}
+
+h2 {
+
+    font-family: 'grandcru-boldmregular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    /*    font-variant-caps: petite-caps;*/
+    color: #14001e;
+    text-align: center;
+}
+
+
+h3 {
+    font-family: 'cascadia_monosemibold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #14001e;
+
+}
+
+h4 {
+    font-family: 'cascadia_monosemibold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: left;
+    letter-spacing: 0.05em;
+    color: #14001e;
+
+}
+
+p {
+
+    font-family: 'cascadia_monolight';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    color: #14001e;
+    text-align: center;
+
+}
+
+
+/*-- SECTIONS ––––––––––––––––––––––––––––––––––––––––––––––––––--*/
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    padding-left: 50px;
+    background-image: url(../images/heroplate.png);
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    background-position: -200px 30px;
+}
+
+.cone {
+    position: relative;
+
+    /*    min-height: 100vh;*/
+    /*    max-height: 200vh;*/
+
+
+}
+
+.platescone {
+    /*    min-height: 140vh;*/
+    background-image: url(../images/plates%20all.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.descright {
+    margin: 20px;
+    justify-content: flex-end;
+    height: 45vh;
+    align-items: flex-end;
+}
+
+.descleft {
+    margin: 20px;
+    justify-content: flex-start;
+    height: 45vh;
+    align-items: flex-end;
+
+}
+
+/*
+.possible{
+    position: absolute;
+    z-index: 3;
+}
+.plausible{
+    position: absolute;
+    z-index: 2;
+}
+.preferable{
+    position: absolute;
+    z-index: 1;
+}
+.probable{
+    position: absolute;
+    z-index: 0;
+}
+*/
+.predictions {
+    background-color: transparent;
+    position: relative;
+    padding: 25px;
+}
+
+.fields {
+    position: relative;
+}
+
+.form {
+    background-color: transparent;
+    position: relative;
+    padding: 50px;
+    font-family: 'grandcru-extralightmregular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: 0.05em;
+    color: #14001e;
+
+
+}
+
+input,
+optgroup,
+select,
+textarea {
+    background-color: transparent;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 2px;
+    border-color: #14001e;
+    padding: 15px 30px;
+    font-weight: 600;
+    color: #CDFF5C;
+}
+
+#year {
+    width: 30%;
+}
+
+#dropdown {
+    width: 50%;
+}
+
+#effect {
+    width: 70%;
+}
+
+#cause {
+    width: 70%;
+}
+
+.about {
+    position: relative;
+    height: auto;
+    background-color: #CDFF5C;
+}
+
+.contact {
+    position: relative;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #14001e;
+    color: #CDFF5C;
+}
+
+/*-- BUTTON ––––––––––––––––––––––––––––––––––––––––––––––––––--*/
+
+
+[type=submit]:not(:disabled),
+.cta:not(:disabled) {
+    cursor: pointer;
+    letter-spacing: .1rem;
+    white-space: nowrap;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background-color: #CDFF5C;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'cascadia_monosemibold', monospace;
+    font-weight: 600;
+    color: #14001e;
+    font-size: 16;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 4px 4px 16px rgb(0 0 0 / 20%);
+    text-transform: none;
+    height: 70px;
+    width: 350px;
+    line-height: 3;
+    margin: 50 0 50 0;
+}
+
+.cta:hover {
+    background-color: #14001e;
+    color: #CDFF5C;
+}
+
+.ctabtn {
+    justify-content: flex-start;
+}
+
+.social {
+    color: transparent;
+}
+
+/*-- PLATE BOX ––––––––––––––––––––––––––––––––––––––––––––––––––--*/
+
+.box {
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*    margin: 20 20 20 20;*/
+    padding: 0 50 0 50;
+    background-position: center;
+    height: 350px;
+    width: 350px;
+}
+
+
+/*-- RESPONSIVE ––––––––––––––––––––––––––––––––––––––––––––––––––--*/
+
+
+@media screen and (max-width: 1280px) {
+
+    .descright {
+        height: 35vh;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .descleft {
+        height: 35vh;
+        align-items: center;
+    }
+
+    .platescone {
+        background-size: 100vh;
+        background-position: 200px 0px;
+    }
+
+    .predictions {
+        padding: 0px;
+    }
+}
+
+    @media screen and (max-width: 992px) {
+        h1 {
+            color: #CDFF5C;
+            letter-spacing: 0em;
+        }
+
+        h4 {
+            color: #F8FFEA;
+            /*        mix-blend-mode: difference;*/
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /*
+    .cone {
+        padding: 25px;
+*/
+
+        .hero {
+            background-size: 100vh;
+            background-position: center 25px;
+        }
+
+        .platescone {
+            padding-left: 0px;
+            background-size: 75vh;
+            background-position: 35px center;
+            margin-top: -75px;
+        }
+
+        .ctabtn {
+            justify-content: center;
+            position: relative;
+            top: 100px;
+        }
+
+        .form {
+            font-weight: 500;
+            font-size: 27pt;
+            padding: 0px 20px 0px 20px;
+            letter-spacing: 0;
+
+
+
+        }
+
+        input,
+        optgroup,
+        select,
+        textarea {
+            line-height: 36pt;
+        }
+
+        #year {
+            width: 50%;
+        }
+
+        #effect {
+            width: 100%;
+        }
+
+        #dropdown {
+            width: 75%;
+        }
+
+        #cause {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+
+        .hero {
+            padding: 65px 15px 0px 15px;
+        }
+
+        .ctabtn {
+            top: 0px;
+        }
+    }
+
+    /* ScroollMagic */
+
+    .content {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 1s ease-out;
+        position: relative;
+    }
+
+    .content.fade-in {
+        opacity: 1;
+        transform: translateY(0px);
+        position: relative;
+    }
